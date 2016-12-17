@@ -1,0 +1,11 @@
+
+<h1>Creatures</h1>
+
+<% @creatures.each do |ele| %>
+  <div>
+    <p><b>Name: </b><%= ele.name %></p>
+    <p><b>Description: </b><%= ele.description %></p>
+    <%= button_to "Show Creature", creature_path(ele), method: :get %>
+  </div>
+
+<%end%>
